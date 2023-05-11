@@ -20,21 +20,21 @@ command to create virtual env.
 > env\scripts\activate
 
 Now move to Address folder in command terminal. 
-'cd Address_Book\Address'
+> cd Address_Book\Address
 
 Now install all pakages.
 By running the following commands.
 
 #this is the command to upgrade pip.
 
-'python.exe -m pip install --upgrade pip'
+> python.exe -m pip install --upgrade pip
 
 command to install all packages.
-'pip install FastAPI sqlalchemy geopy logging uvicorn'
+> pip install FastAPI sqlalchemy geopy logging uvicorn
 
 
 Once every package is installed.
 run the following command to start the application.
 
 command to run the application.
-'uvicorn Address.main:app --reload'
+> uvicorn Address.main:app --reload
