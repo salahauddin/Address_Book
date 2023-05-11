@@ -17,7 +17,8 @@ cd Address_Book/Address
 Now install all pakages.
 By running the following commands.
 
-#this is to upgrade pip 
+#this is the command to upgrade pip.
+
 python.exe -m pip install --upgrade pip
 
 pip install FastAPI sqlalchemy geopy logging uvicorn
