@@ -41,3 +41,5 @@ command to run the application.
 
 The FastAPI Swagger UI can be accessed at the link
 >http://127.0.0.1:8000/docs
+
+a logfile is added at the project level for logs to be registered.
