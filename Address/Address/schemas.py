@@ -16,3 +16,8 @@ class Address(BaseModel):
 class Addresscreate(BaseModel):
     map_latitude: float 
     map_longitude: float 
+    
+#Schemas to be used while updating the Address for a particular ID
+class Addressupdate(BaseModel):
+    map_latitude: float | None=None
+    map_longitude: float | None=None
