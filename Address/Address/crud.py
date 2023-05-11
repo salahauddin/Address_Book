@@ -2,6 +2,7 @@
 from sqlalchemy.orm import Session
 
 from . import models, schemas
+from fastapi import HTTPException
 
 
 #to calculate the distances of address with respect to base location
@@ -38,3 +39,27 @@ def create_address(db: Session, address: schemas.Addresscreate):
     db.commit()
     db.refresh(db_user)
     return db_user
+
+#to update the address with new latitute and longitude 
+def update_address(id:int,db: Session, address: schemas.Addressupdate):
+    db_address = db.query(models.Address).filter(models.Address.id==id).first()
+    if not db_address:
+        raise HTTPException(status_code=404, detail="address not found")
+    for key, value in address.dict().items():
+        if value is not None:
+            setattr(db_address, key, value)
+
+    db.commit()
+    db.refresh(db_address)
+
+    return db_address
+
+#to delete the address from the id provided
+def delete_address(id:int,db: Session):
+    db_address = db.query(models.Address).filter(models.Address.id==id).first()
+    if not db_address:
+        raise HTTPException(status_code=404, detail="address not found")
+    db.delete(db_address)
+    db.commit()
+
+    return db_address
