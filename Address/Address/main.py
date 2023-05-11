@@ -69,3 +69,18 @@ def read_all_address(db: Session = Depends(get_db)):
     logger.info('Processing all address Request')
     address = crud.get_address(db)
     return address
+
+#end point to Update address for given ID depends on get_db method
+@app.patch("/address_update/{id}", response_model=schemas.Address)
+def update_address(id:int,address: schemas.Addressupdate, db: Session = Depends(get_db)):
+    address = crud.update_address(id,db,address=address)
+    logger.info(f'Processed update address Request for ID : {id}')
+    return address
+
+
+#end point to delete address for given ID depends on get_db method
+@app.delete("/address/{id}")
+async def delete_address(id: int, db: Session = Depends(get_db)):
+    address = crud.delete_address(id,db)
+    logger.info(f'Processed delete address Request for ID : {id}')
+    return {"message": "Task deleted successfully","data":address}
