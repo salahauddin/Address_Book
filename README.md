@@ -50,8 +50,11 @@ The FastAPI Swagger UI can be accessed at the link
 the base cordinates with which the application calculates distance is 12.910592, 77.630669.
 
 >post method of this application creates an address record with latitudes and longitutes.
+
 >Get method can fetch address with respect the distance from the base cordinates.
+
 >Patch method updates the record for the specified ID.
+
 >Delete method deletes the address of the specified ID.
 
-a logfile is added at the project directory level at \Address_Book\Address\ for all logs to be registered.
+A logfile is added at the project directory level at \Address_Book\Address\ for all logs to be registered.
