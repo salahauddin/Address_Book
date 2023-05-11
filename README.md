@@ -3,15 +3,21 @@ A FastAPI backend application with Address book that takes a distance and gives 
 
 Below is the detailed explanation of running the app on windows.
 
-clone this repository.
-Save the project at the location.
-C:\Users\{user_name}\Anaconda3\Scripts
+--- clone this repository.
+
+clone the repository at the location run this command in Git CMD.
+> cd C:\Users\{user_name}\Anaconda3\Scripts
+
+command to clone rpository in Git CMD.
+> git clone https://github.com/salahauddin/Address_Book
 
 
+Now in command terminal.
 Create Virtual environment at C:\Users\{user_name}\Anaconda3\Scripts.
+> cd C:\Users\{user_name}\Anaconda3\Scripts
 
 command to create virtual env.
-'env\scripts\activate'
+> env\scripts\activate
 
 Now move to Address folder in command terminal. 
 'cd Address_Book\Address'
