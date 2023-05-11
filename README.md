@@ -38,3 +38,6 @@ run the following command to start the application.
 
 command to run the application.
 > uvicorn Address.main:app --reload
+
+The FastAPI Swagger UI can be accessed at the link
+>http://127.0.0.1:8000/docs
