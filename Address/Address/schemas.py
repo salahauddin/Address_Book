@@ -10,7 +10,7 @@ class Address(BaseModel):
     map_longitude: float 
     
     class Config:
-        orm_mode = True
+        orm_mode = True 
 
 #to validate that the Latitude and Logitue values are in float
 class Addresscreate(BaseModel):

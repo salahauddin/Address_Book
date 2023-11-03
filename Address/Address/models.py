@@ -6,7 +6,7 @@ from .database import Base
 
 #defining the address Table in data base
 class Address(Base):
-    __tablename__ = "adress"
+    __tablename__ = "adress" 
 
     id = Column(Integer, primary_key=True, index=True)
     map_latitude =  Column(Float)
