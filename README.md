@@ -2,11 +2,13 @@
 A FastAPI backend application with Address book that takes a distance and gives all addresses within that distance
 
 > 1) Cloning and running the app.
+> 1) Cloning and running the app.
 Below is the detailed explanation of running the app on windows.
 
 --- clone this repository.
 
 clone the repository at the location run this command in Git CMD.
+> cd C:\Users\ {user_name}\Anaconda3\Scripts
 > cd C:\Users\ {user_name}\Anaconda3\Scripts
 
 command to clone rpository in Git CMD.
@@ -14,6 +16,8 @@ command to clone rpository in Git CMD.
 
 
 Now in command terminal.
+Create Virtual environment at C:\Users\ {user_name}\Anaconda3\Scripts.
+> cd C:\Users\ {user_name}\Anaconda3\Scripts
 Create Virtual environment at C:\Users\ {user_name}\Anaconda3\Scripts.
 > cd C:\Users\ {user_name}\Anaconda3\Scripts
 
